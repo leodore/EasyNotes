@@ -26,7 +26,7 @@ import java.util.ArrayList;
  * A placeholder fragment containing a simple view.
  */
 public class NoteListFragment extends ListFragment {
-    ArrayList<Note> mNotes;
+    private ArrayList<Note> mNotes;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -160,19 +160,25 @@ public class NoteListFragment extends ListFragment {
                     textTextView.setText(null);
                 }
                 else {
-                    //If the note's length is smaller than 100, display all the characters
+                    //If the note's length is smaller than 180, display all the characters
                     if (note.getText().length() < 180) {
                         textTextView.setText(note.getText());
                     }
                     //If the note's length is not smaller than 100, display the first 100 characters
-                    //with "..." appended to the 100th character
+                    //with "..." appended to the 180th character
                     else {
                         textTextView.setText(note.getText().substring(0, 179) + "...");
                     }
                 }
             }
             else {
-                textTextView.setText(note.getText());
+                //If note's title and text are both null, abandon the note
+                if (note.getTitle() == null) {
+                    NoteLab noteLab = NoteLab.getInstance(getActivity());
+                    noteLab.removeNote(note);
+                    ((NoteAdapter) getListAdapter()).notifyDataSetChanged();
+                    noteLab.saveNotes();
+                }
             }
 
             return convertView;
