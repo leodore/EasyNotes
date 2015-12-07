@@ -61,10 +61,6 @@ public class NoteFragment extends Fragment {
         upNav.setColorFilter(ContextCompat.getColor(getActivity(), R.color.upNavAndShareIconColor),
                 PorterDuff.Mode.SRC_ATOP);
         ((AppCompatActivity)getActivity()).getSupportActionBar().setHomeAsUpIndicator(upNav);
-
-        //UUID noteId = (UUID)getArguments().getSerializable(EXTRA_NOTE_ID);
-
-        //mNote = NoteLab.getInstance(getActivity()).getNote(noteId);
     }
 
     @Override
