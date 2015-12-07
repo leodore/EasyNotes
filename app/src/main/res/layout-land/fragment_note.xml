@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/note_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="22dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        android:hint="Title"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textColorHint="@color/titleColorHint"
+        android:inputType="text"
+        android:background="@null"/>
+
+    <EditText
+        android:id="@+id/note_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="22dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="8dp"
+        android:hint="Note"
+        android:layout_below="@id/note_title"
+        android:textSize="16sp"
+        android:textColorHint="@color/textColorHint"
+        android:inputType="textMultiLine"
+        android:background="@null"/>
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="22dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/dotted_line_land"
+        android:textSize="11sp"
+        android:textColor="@color/dottedLineColor"/>
+
+    <TextView
+        android:id="@+id/note_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="bottom|end"
+        android:text="Note date"
+        android:textColor="@color/dateTextColor"
+        android:textSize="11sp"/>
+
+</LinearLayout>

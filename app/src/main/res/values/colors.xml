@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#216ef3</color>
+    <color name="colorPrimaryDark">#1e56e5</color>
+    <color name="colorAccent">#F44336</color>
+    <color name="colorText">#424242</color>
+    <color name="colorItemSelected">#cecece</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorBackground">#E0E0E0</color>
+    <color name="actionModePrimary">#999999</color>
+    <color name="actionModePrimaryDark">#757575</color>
+
+    <color name="titleColorHint">#BDBDBD</color>
+    <color name="textColorHint">#BDBDBD</color>
+    <color name="dateTextColor">#9E9E9E</color>
+    <color name="dottedLineColor">#9E9E9E</color>
+    <color name="editPageColorPrimary">#FAFAFA</color>
+    <color name="editPageColorPrimaryDark">#acacac</color>
+    <color name="editPageColorAccent">#424242</color>
+    <color name="upNavAndShareIconColor">#6c6c6c</color>
+</resources>
