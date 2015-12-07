@@ -161,13 +161,13 @@ public class NoteListFragment extends ListFragment {
                 }
                 else {
                     //If the note's length is smaller than 180, display all the characters
-                    if (note.getText().length() < 180) {
+                    if (note.getText().length() < 170) {
                         textTextView.setText(note.getText());
                     }
                     //If the note's length is not smaller than 100, display the first 100 characters
                     //with "..." appended to the 180th character
                     else {
-                        textTextView.setText(note.getText().substring(0, 179) + "...");
+                        textTextView.setText(note.getText().substring(0, 169) + "...");
                     }
                 }
             }
