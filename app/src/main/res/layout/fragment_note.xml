@@ -28,11 +28,11 @@
         android:layout_marginTop="10dp"
         android:hint="@string/text_hint"
         android:layout_below="@id/note_title"
-        android:maxLines="19"
         android:textSize="16sp"
         android:textColorHint="@color/textColorHint"
         android:textColor="@color/colorText"
         android:inputType="textMultiLine"
+        android:maxLines="19"
         android:background="@null"/>
 
     <TextView
