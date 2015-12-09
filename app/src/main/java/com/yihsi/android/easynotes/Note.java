@@ -58,7 +58,11 @@ public class Note {
     public Date getDate() {
         return mDate;
     }
-
+    
+    public void setDate(Date date) {
+            mDate = date;
+    }
+    
     public JSONObject toJSON() throws JSONException {
         JSONObject json = new JSONObject();
         json.put(JSON_ID, mId.toString());
