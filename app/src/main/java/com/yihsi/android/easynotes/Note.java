@@ -68,8 +68,5 @@ public class Note {
         return json;
     }
 
-    @Override
-    public String toString() {
-        return mTitle;
-    }
+
 }
