@@ -86,7 +86,8 @@ public class NoteFragment extends Fragment {
 
             @Override
             public void afterTextChanged(Editable s) {
-                mDateField.setText(DateFormat.format("E,MMM dd,yyyy", mNote.getDate()));
+                mDateField.setText(DateFormat.format("E,MMM dd,yyyy", new Date()));
+                mNote.setDate(new Date());
             }
         });
 
@@ -105,7 +106,8 @@ public class NoteFragment extends Fragment {
 
             @Override
             public void afterTextChanged(Editable s) {
-                mDateField.setText(DateFormat.format("E,MMM dd,yyyy", mNote.getDate()));
+                mDateField.setText(DateFormat.format("E,MMM dd,yyyy", new Date()));
+                mNote.setDate(new Date());
             }
         });
 
